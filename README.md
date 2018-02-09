@@ -1,6 +1,7 @@
 # iota.lib.crystal
 
-TODO: Write a description here
+[![Build Status](https://travis-ci.org/liepaja/iota.lib.crystal.svg?branch=master)](https://travis-ci.org/liepaja/iota.lib.crystal)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
 
