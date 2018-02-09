@@ -1,0 +1,9 @@
+name: iota.lib.crystal
+version: 0.1.0
+
+authors:
+  -  <>
+
+crystal: 0.24.1
+
+license: MIT
