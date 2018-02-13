@@ -1,9 +1,11 @@
 require "./spec_helper"
 
 describe Iota do
-  # TODO: Write tests
+  it "should have version number" do
+    ::Iota::VERSION.should_not eq(nil)
+  end
 
-  it "works" do
-    true.should eq(true)
+  it "should exists" do
+    Iota.should_not eq(nil)
   end
 end
