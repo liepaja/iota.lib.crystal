@@ -3,6 +3,7 @@ require "./spec_helper"
 describe Iota::Api do
   describe "initialization" do
     it "#initialize w/o parameters" do
+      puts File.join(__DIR__,"../resources/hosts.json")
       api = Iota::Api.new
     end
 

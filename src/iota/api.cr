@@ -1,10 +1,10 @@
 require "http"
 require "json"
+require "./resources"
 
 module Iota
   class Api
 
-    HOSTS = "./resources/hosts.json"
     getter host : String
 
     def initialize(@host = "")
@@ -14,10 +14,10 @@ module Iota
     end
 
     private def get_public_hosts
-      if !File.exists?(HOSTS)
+      if typeof(Resources::HOSTS) != Array(String)
         raise ArgumentError.new "Hosts file doesn't exist!"
       end
-      JSON.parse(File.read(HOSTS))
+      Resources::HOSTS
     end
 
     def get_node_info : JSON::Any
@@ -32,7 +32,7 @@ module Iota
       public_hosts = get_public_hosts
       size_of_public_nodes = public_hosts.size - 1
       random_index = Random.rand(size_of_public_nodes)
-      public_hosts[random_index].as_s
+      public_hosts[random_index]
     end
 
   end
