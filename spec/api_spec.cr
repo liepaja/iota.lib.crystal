@@ -14,21 +14,21 @@ describe Iota::Api do
 
   describe "#get_node_info" do
     it "should return information about the node" do
-      api = Iota::Api.new
+      api = Iota::Api.new("https://nodes.thetangle.org:443")
       api.get_node_info
     end
   end
 
   describe "#get_neighbors" do
     it "should return a list of neighbors" do
-      api = Iota::Api.new
+      api = Iota::Api.new("https://nodes.thetangle.org:443")
       api.get_neighbors
     end
   end
 
   describe "#get_tips" do
     it "should return a list of tips" do
-      api = Iota::Api.new
+      api = Iota::Api.new("https://nodes.thetangle.org:443")
       api.get_tips
     end
   end

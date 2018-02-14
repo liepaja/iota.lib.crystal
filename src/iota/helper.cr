@@ -5,7 +5,6 @@ module Iota
 
     protected def fetch(body, host = @host, headers = headers)
       body = named_tuple_to_string(body)
-      puts body
       api_resp = HTTP::Client.post(host, headers, body)
       JSON.parse(api_resp.body)
     end

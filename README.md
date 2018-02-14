@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/liepaja/iota.lib.crystal.svg?branch=master)](https://travis-ci.org/liepaja/iota.lib.crystal)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![IOTA IRI API Compatibility](https://img.shields.io/badge/IOTA%20IRI%20API%20compatibility-v1.4.0-blue.svg)](https://iota.readme.io/v1.3.0/reference)
+[![IOTA IRI API Compatibility](https://img.shields.io/badge/IOTA%20IRI%20API%20compatibility-v1.4-blue.svg)](https://iota.readme.io/v1.3.0/reference)
 [![IOTA IRI API Coverage](https://img.shields.io/badge/IOTA%20IRI%20API%20coverage-7/15%20commands-blue.svg)](https://iota.readme.io/v1.3.0/reference)
 
 ## Dependencies
@@ -116,7 +116,7 @@ api.find_transactions
 #    "S9KWBPUOJGSDODPPAZYTCAJAIKHZPOFEQXKOBDKRSZRB9MXSQXOIQBIDXGCQ99XNJJS9DTNRTHPLZ9999"
 #  ], 
 #  "duration" => 0_i64
-#}
+# }
 ```
 
 #### `getTrytes`
@@ -129,7 +129,7 @@ api.get_trytes
 #    "QBTCHDEADDPCXCSCEAXCBDEAXCCDHDPCGDEAUCCDFDEAGDIDDDDDCDFDHDXCBDVCEAHDWCTCEAHDPADADXCBDVCEAHDFDPCBD...."
 #  ], 
 #  "duration" => 1_i64
-#}
+# }
 ```
 
 #### `getInclusionStates`
@@ -140,7 +140,7 @@ api.get_inclusion_states
 # => {
 #  "states" => [false], 
 #  "duration" => 0_i64
-#}
+# }
 ```
 
 #### `getBalances`
@@ -153,7 +153,7 @@ api.get_balances
 #  "references" => ["DKNTVXJYURETTWFBKWKKRRPVMNRZHZQJCRUHXLOMOADJPNYNNEHOUPMFLPSHURZHJJMFEQSTADATA9999"], 
 #  "milestoneIndex" => 350240_i64, 
 #  "duration" => 0_i64
-#}
+# }
 ```
 
 ## Contributing
